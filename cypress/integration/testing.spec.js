@@ -4,4 +4,7 @@ describe("Integration Test", () => {
     cy.visit("/");
     cy.contains("Hello World!")
   });
+  it("Is on login page", () => {
+    cy.location("href").should("eq", "http://localhost:3001/login") // possibly just /login
+  });
 });
