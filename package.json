@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "start": "node index",
+    "test": "cypress run",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",

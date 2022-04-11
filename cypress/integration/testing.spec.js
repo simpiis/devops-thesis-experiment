@@ -1,11 +1,11 @@
 describe("Integration Test", () => {
   // tests go here
   it("Can open first page", () => {
-    cy.visit("/");
+    cy.visit("http://localhost:3001/");
     cy.contains("Hello World!");
   });
   it("Is on login page", () => {
-    cy.visit("/login");
+    cy.visit("http://localhost:3001/login");
     cy.url().should('include', '/login');
   });
   it("Can fill the login form", () => {
