@@ -16,7 +16,7 @@ app.use(express.json({
   limit: '100MB'
 }));
 
-// Start the web server at port 3000
+// Start the web server at port 3001
 app.listen(port, () =>
   console.log('Listening on http://localhost:' + port));
 // Import the rest-api setup function

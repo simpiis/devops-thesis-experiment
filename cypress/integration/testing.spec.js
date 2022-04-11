@@ -18,4 +18,12 @@ describe("Integration Test", () => {
   it("Goes to user page", () => {
     cy.url().should('include', '/user');
   });
+  it("Press add button"), () => {
+    cy.get(".addBtn").click();
+    cy.get(".valueText").should("have.value", "1")
+  }
+  it("Press subtract button"), () => {
+    cy.get(".subBtn").click();
+    cy.get(".valueText").should("have.value", "0")
+  }
 });
