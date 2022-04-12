@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 const user = require('../frontend/user')
 
 
