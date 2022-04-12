@@ -22,5 +22,4 @@ function changeNumber(mod) {
 module.exports = {
   addClicked: addClicked,
   subClicked: subClicked,
-  changeNumber: changeNumber
 };

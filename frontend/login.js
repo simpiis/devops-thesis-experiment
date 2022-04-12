@@ -11,4 +11,4 @@ function verifyCred(username, password) {
   return false
 }
 
-module.exports = verifyCred;
+module.exports = { verifyCred: verifyCred };
