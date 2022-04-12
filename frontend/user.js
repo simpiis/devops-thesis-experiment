@@ -17,3 +17,10 @@ function changeNumber(mod) {
   }
   document.getElementById('valueText').innerHTML = newValue.toString()
 }
+
+
+module.exports = {
+  addClicked: addClicked,
+  subClicked: subClicked,
+  changeNumber: changeNumber
+};

@@ -19,11 +19,15 @@ jobs:
       # Install NPM dependencies, cache them correctly
       - name: Node Setup
         uses: actions/setup-node@v2
+      - name: install npm packages
+        run : "npm install"
+      # run all Jest tests
+      - name: Jest tests
+        run: "npm run unitTest"
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
-          build: "npm install"
           start: "npm start"
           browser: chrome
-      # - name: Jest testing of runner that the job will run on
+     

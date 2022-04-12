@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index",
     "test": "cypress run",
+    "unitTest": "jest",
     "cypress:open": "cypress open"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
-    "cypress": "^9.5.3"
+    "cypress": "^9.5.3",
+    "jest": "^27.5.1"
   }
 }

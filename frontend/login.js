@@ -10,3 +10,5 @@ function verifyCred(username, password) {
     return true
   return false
 }
+
+module.exports = verifyCred;
